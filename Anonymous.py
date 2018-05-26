@@ -226,7 +226,7 @@ def windows():
 				return False
 			
 		def validusername(self, d, i, P, s, S, v, V, W):
-			if S in 'abcdefghijklmnopqrstuvwxyz1234567890':
+			if S in 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSRTUVWXYZ1234567890_':
 				return True
 			else:
 				self.bell()
@@ -339,12 +339,12 @@ def origame():
 	class Death(Scene):
 		
 		quips = [
-			"\n\nProbably you failed to uninstall the 'Undelete', so the Anonymous group no longer rely on you.",
+			"\n\nYou probably failed to uninstall the 'Undelete', so the Anonymous group can no longer rely on you.",
 			"\n\nThe police couldn't figure out the password anymore and the data permanently got deleted leaving Esta escaped.",
 			"\n\nThe security system triggered and you fell in a trap. \nLater the police came and arrested you.",
-			"\n\nThe security system located you and you got caught and you spend the rest of your life behind the bars.",
-			"\n\nYou lost control of your system and the hacker successfully hacked into your database. \nHe published the anonimity and you spend rest of life behind the bars.",
-			"\n\nI have no longer access to your database. Please start a new game."
+			"\n\nThe security system located you and you got caught. You spend the rest of your life behind bars.",
+			"\n\nYou lost control of your system and the hacker successfully hacked into your database. \nHe published your personal details, and within a few days, you are behind the bars you are likely to be behind for the rest of your life.",
+			"\n\nI no longer have access to your database. Please start a new game."
 		]
 		
 		def enter(self):
@@ -430,7 +430,7 @@ def origame():
 				time.sleep(2)
 			except:
 				return 'death'
-			printf('\nHi! I am TX001. I will be going to assist you. I am an AI installed on your terminal. \nI have been programmed to automate various tasks and also to keep a check on you. \nI get activated whenever there\'s a need to deliver an information. \nI may go through your mails and sometimes help you to understand the systems. \nI can also check your system\'s health. \nI run a priority scan whenever I encounter bugged system. \nYou may manually run the scan by \'runsc\' command. \nYou can get the available commands in your system by typing \'help\'. \nSo see you again once you successfully log into your terminal.\n\n')
+			printf('\nHi! I am TX001. I will be assisting you. I am an AI installed on your terminal. \nI have been programmed to automate various tasks and also to check on you from time to time. \nI am activated whenever there\'s a need to deliver information. \nI may go through your mail and sometimes help you to understand the system. \nI can also check your system\'s health. \nI run a priority scan whenever I encounter a system with bugs. \nYou may manually run the scan with the \'runsc\' command. \nYou can get the available commands in your system by typing \'help\'. \nI will see you again once you successfully log into your terminal.\n\n')
 			time.sleep(1)
 			bgsound()
 			while True:
@@ -496,7 +496,7 @@ def origame():
 			time.sleep(4)
 			print "TX001 successfully activated.\n"
 			time.sleep(1)
-			printf("\nSo you have successfully logged into your terminal. Now to view the available commands type 'help'. \nYou will find some commands are yet unavailable. You will get them in higher levels. \nAs you play and complete the missions you earn achievements and your level increases.\nAs you level up you get difficult systems to hack in. \nInitially during hacking I mask your IP to ensure that no traceback could locate you.\n\n")
+			printf("\nSo you have successfully logged into your terminal. Now to view the available commands type 'help'. \nYou will find some commands are yet unavailable. You will get them in higher levels. \nAs you play and complete the missions you earn achievements and your level increases.\nAs you level up you are tasked with hacking into more difficult systems. \nInitially during hacking I mask your IP to ensure that no traceback could locate you.\n\n")
 			bgsound()
 			while True:
 				x = raw_input('%s$Terminal:~ ' % user)
@@ -509,7 +509,7 @@ def origame():
 					printf("To open any file simply enter its name.\n")
 					bgsound()
 				elif x == 'readme.txt':
-					print "USR: john, PASS: bght234, IP: 451.001.47.123"
+					print "USR: john, PASS: bght234, IP: 101.77.152.31"
 				elif x == 'ping':
 					print "ping <IP> (Currently this command is unavailable)"
 				elif x == 'mail':
@@ -524,10 +524,10 @@ def origame():
 					print "\n"
 					x = raw_input('%s$Terminal/mail:~ ' % user)
 					if x == '01':
-						print "\nJohn Adwik is found to be a very ridiculous man. He run a self organizing business and have some political impact. \nHe soon turned to be a very fucking creature. The local police and politicians are bribed by him. \nHe was totally ruined and his family is struggling by him. \nThere's still no proof against him so that people could file a case. \nGo and hack his computer, if you find anything useful or interesting upload it to us at 202.145.785.45.\n"
+						print "\nJohn Adwik has been found to be a ridiculous man. He is running a self-organizing business and has some political impact. \nHe soon turned out to be a fucking nasty excuse for a businessman. He's even been bribing the local police and politicians. \nRecently, he has become violent, and tortured his family among other deplorable acts. \nSadly, at the moment, we have no hard evidence that would make us able to file a case against him. \nI want you to go and hack his computer. The details are below. \nIP: 101.77.152.31. \nUsername: john \nPass: bght234 \nIf you find anything incriminating or anything you think we should look into, upload it to us at 202.145.785.45.\n"
 					else:
 						print "To view the mail type the serial no."
-				elif x == "connect 451.001.47.123":
+				elif x == "connect 101.77.152.31":
 					try:
 						time.sleep(1)
 						Level1().animate('Connecting', 7)

@@ -15,6 +15,7 @@ def credits():
 	
 	credits = '''\t\t\t\t\t\x1b[1m\x1b[33mThe C-G@MES presents THE ANONYMOUS
 		\n\n\t\t\t\t\t\x1b[36mDeveloped by Jishan Bhattacharya
+		\n\t\t\t\t\tScene edited by Faith Connors
 		\n\t\t\t\t\tMusic Directed by Subhrangshu Adhikary
 		\n\t\t\t\t\tArt designed and edited by Arijit Roy'''
 		

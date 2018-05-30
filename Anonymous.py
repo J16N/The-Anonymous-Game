@@ -320,7 +320,7 @@ def origame():
 			while current_scene != last_scene and current_scene != death_scene and i < 9:
 				print '\n'
 				print "-" * 125
-				print "\t\t\t\t\tYOU HAVE SUCCESSFULLY REACHED LEVEL %d" % i
+				print "\t\t\t\t\tYOU HAVE SUCCESSFULLY REACHED LEVEL %d\n" % i
 				print "-" * 125
 				print '\n'
 				pickle.dump(i, open("savegame1.dat", 'wb'))

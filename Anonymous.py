@@ -340,7 +340,7 @@ def origame():
 
 		quips = [
 			"\n\nYou probably failed to uninstall the 'Undelete', so the Anonymous group can no longer rely on you.",
-			"\n\nThe police couldn't figure out the password anymore and the data permanently got deleted leaving Esta escaped.",
+			"\n\nThe police couldn't figure out the password anymore and the data was permanently deleted, letting Esta escape.",
 			"\n\nThe security system triggered and you fell in a trap. \nLater the police came and arrested you.",
 			"\n\nThe security system located you and you got caught. You spend the rest of your life behind bars.",
 			"\n\nYou lost control of your system and the hacker successfully hacked into your database. \nHe published your personal details, and within a few days, you are behind the bars you are likely to be behind for the rest of your life.",
@@ -2911,7 +2911,7 @@ class Anonymous(object):
 							elif y == '':
 								x
 							else:
-								printf("\n\nPlease choose either of the following opinion.")
+								printf("\n\nPlease choose either of the following opinions.")
 								bgsound()
 					elif y == '':
 						x

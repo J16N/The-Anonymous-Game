@@ -2799,10 +2799,10 @@ class Anonymous(object):
 	def showInfo(self):
 		about = '''
 		NAME : The Anonymous
-		VERSION: 3.1
+		VERSION: 4.5
 
 		DEVELOPER: Jishan Bhattacharya
-		SCENE DIRECTOR: Faith Connors
+		SCRIPT EDITOR: Faith Connors
 		MUSIC DIRECTOR: Subhrangshu Adhikary
 		ART DIRECTOR: Arijit Roy
 
